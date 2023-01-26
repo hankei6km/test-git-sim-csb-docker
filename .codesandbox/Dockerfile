@@ -1,6 +1,5 @@
 FROM ubuntu
- 
-# Install htop by default
+
 RUN apt update -y \
   && apt install --no-install-recommends -y build-essential python3-dev libcairo2-dev libpango1.0-dev ffmpeg \
   && apt install --no-install-recommends -y python3 python3-pip \
