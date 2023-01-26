@@ -8,4 +8,8 @@ RUN apt update -y \
   # Setup user env
   && mkdir /root/tmp \
   # これは上書きされる 
-  && echo "alias git-sim='git-sim --media-dir /workspace/'" >> /root/.zshrc
+  && echo "alias git-sim='git-sim --media-dir /workspace/'" >> /root/.zshrc \
+  # Cleanup
+  && apt-get autoremove -y \
+  && apt-get clean -y \
+  && rm -rf /var/lib/apt/lists/*
