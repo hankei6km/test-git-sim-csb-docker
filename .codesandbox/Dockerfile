@@ -7,8 +7,8 @@ RUN apt-get update -y \
   && pip3 install git-sim \
   # Setup user env
   && mkdir /root/tmp \
-  # これは上書きされる 
-  && echo "alias git-sim='git-sim --media-dir /workspace/ -d'" >> /root/.zshrc \
+  # これは上書きされる(CodeSandbox 側が設定を変更するもよう)
+  # && echo "alias git-sim='git-sim --media-dir /workspace/ -d'" >> /root/.zshrc \
   # Cleanup
   && apt-get autoremove -y \
   && apt-get clean -y \
