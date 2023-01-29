@@ -1,2 +1,4 @@
-/git-sim_media/
+/git-sim_media/**
 /output.gif
+!/git-sim_media/**/
+!/git-sim_media/**/.gitignore
