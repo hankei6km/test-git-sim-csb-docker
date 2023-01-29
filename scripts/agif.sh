@@ -5,7 +5,7 @@ set -e
 INPUT="/workspace/git-sim_media/videos/1080p60/GitSim.mp4"
 OUTPUT="/workspace/output.gif"
 
-SCALE="640:-1"
+SCALE="720:-1"
 
 # 削除しておかないと CodeSandbox の IDE 側のファイルが更新されない.
 test -f "${OUTPUT}" && rm "${OUTPUT}"
